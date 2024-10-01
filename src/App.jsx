@@ -1,7 +1,6 @@
 import './App.css';
 import Card from './components/Card';
 import { flashcardList } from './data';
-// import NextButton from './components/NextButton';
 
 const App = () => {
   return (
