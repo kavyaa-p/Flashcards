@@ -41,7 +41,8 @@ GIF created with [Kap](https://getkap.co/) for macOS
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The main challenge for this project came from understanding useState, and figuring out
+how to flip the cards to show the text on each side of the card.
 
 ## License
 
