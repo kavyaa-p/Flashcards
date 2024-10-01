@@ -1,8 +1,8 @@
 /* Card.css */
 .FlipCard {
-    perspective: 1000px; /* Necessary for 3D effect */
+    perspective: 1000px;
     width: 700px;
-    height: 400px; /* Increased height for better flag/image display */
+    height: 400px;
     margin: 20px auto;
     transition: transform 0.3s ease;
 }
@@ -14,11 +14,11 @@
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    transform: rotateX(0deg); /* Default state */
+    transform: rotateX(0deg);
 }
 
 .FlipCard.flipped .FlipCardInner {
-    transform: rotateX(180deg); /* Rotate the card 180 degrees vertically */
+    transform: rotateX(180deg);
 }
 
 .Card {
@@ -28,17 +28,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    background-color: rgba(255, 255, 255, 0.9);
     border: 2px solid #ccc;
     border-radius: 10px;
     backface-visibility: hidden;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.6s ease;
 }
 
 .CardBack {
-    background-color: rgba(224, 224, 224, 0.9); /* Light background for back */
+    background-color: rgba(224, 224, 224, 0.9);
     transform: rotateX(180deg);
     backface-visibility: hidden;
 }

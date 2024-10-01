@@ -4,12 +4,12 @@ import './Card.css';
 
 const Card = () => {
     const [currentCardIndex, setCurrentCardIndex] = useState(0);
-    const [isFlipped, setIsFlipped] = useState(false); // Track flip state
+    const [isFlipped, setIsFlipped] = useState(false);
 
     const currentCard = flashcardList[currentCardIndex];
 
     const cardClick = () => {
-        setIsFlipped(!isFlipped); // Toggle the flip state
+        setIsFlipped(!isFlipped);
     };
 
     function handleNextClick() {
