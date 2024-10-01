@@ -1,0 +1,51 @@
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  color: black;
+  line-height: 1.6;
+  position: relative; /* Allow child elements to position correctly */
+  z-index: 1; /* Ensure content stays on top of the background */
+}
+
+/* Background styling */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/worldMap.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Send background behind everything */
+  filter: blur(8px); /* Apply blur to the background image only */
+}
+
+/* App content container */
+.App {
+  position: relative;
+  z-index: 2; /* Ensure content stays above the background */
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+}

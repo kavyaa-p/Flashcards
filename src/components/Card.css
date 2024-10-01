@@ -1,0 +1,78 @@
+/* Card.css */
+.FlipCard {
+    perspective: 1000px; /* Necessary for 3D effect */
+    width: 700px;
+    height: 400px; /* Increased height for better flag/image display */
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.FlipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg); /* Default state */
+}
+
+.FlipCard.flipped .FlipCardInner {
+    transform: rotateX(180deg); /* Rotate the card 180 degrees vertically */
+}
+
+.Card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for the card */
+    transition: transform 0.6s ease;
+}
+
+.CardBack {
+    background-color: rgba(224, 224, 224, 0.9); /* Light background for back */
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+}
+
+/* Adjust flag image size */
+.Card img {
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.Button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Button button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Button button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
